@@ -97,3 +97,8 @@ let arr = [
     }
 ]
 console.log(arr)
+
+// я не понял, какую информацию нужно выводить, вывел всё, но могу и отдельные части)
+// console.log(arr[0].password);
+// console.log(arr[0].name);
+// console.log(arr[0].username);
