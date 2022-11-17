@@ -33,7 +33,7 @@ let book1 = {
     authors: [
        {
             name: 'Wesley Earl Craven',
-            age: 76
+           age: 76,
         },
         {
           name: 'Peter Locke',

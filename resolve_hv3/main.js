@@ -113,5 +113,5 @@ if (a>b) {
 // буде присвоювати змінній х значення "default"
 // якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
 
-let x = +prompt() || "default";
-console.log(x);
+// let x = +prompt() || "default";
+// console.log(x);
