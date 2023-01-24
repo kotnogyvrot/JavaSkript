@@ -14,9 +14,13 @@
 //     ]
 // }
 // console.log(book1);
-
-function formula(long, b) {
-  let result =  (long+b)*3;
-    console.log(result);
-}
-formula(10,45);
+// const age = 25
+// if (age > 18) {
+//   console.log('big one')
+// } else if (age >=12){
+//   console.log ('teenager')
+// } else {
+//   console.log('child')
+// }
+let t=1
+console.log(t)

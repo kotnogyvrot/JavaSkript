@@ -23,10 +23,10 @@
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
-// function dom(opis) {
-//     document.write(`<p> ${opis}</p>` );
-// }
-// dom(`horosho jit doma, gde teplo i svetlo`);
+function dom(opis) {
+    document.write(`<p> ${opis}</p>` );
+}
+dom(`horosho jit doma, gde teplo i svetlo`);
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
 // function dom(opis) {
@@ -97,13 +97,15 @@
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
-let arr = [1,3,5,7,9];
-function summa(array) {
-    let sum = 0;
-    for (const item of array) {
-        sum += item;
-    }
-    return sum;
-}
+// let arr = [1,3,5,7,9];
+// function summa(array) {
+//     let sum = 0;
+//     for (const item of array) {
+//         sum += item;
+//     }
+//     return sum;
+// }
+//
+// console.log(summa(arr));
 
-console.log(summa(arr));
+
