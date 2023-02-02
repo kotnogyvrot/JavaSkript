@@ -97,43 +97,44 @@
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
-const colormast = [
-    {mast: 'spade', color: 'red'},
-    {mast: 'diamond', color: 'red'},
-    {mast: 'heart', color: 'black'},
-    {mast: 'clubs', color: 'black'},
-]
-const znachenie = [6, 7, 8, 9, 10, 'jack','queen','king', 'ace']
-const koloda =[];
-for (const colormasts of colormast) {
-    for (const znachenies of znachenie) {
-        const card = {
-            mast: colormasts.mast,
-            value: znachenies,
-            color: colormasts.color
-        }
-        koloda.push(card)
-    }
-}
-koloda.push({value: `joker`});
-console.log(koloda);
-// - знайти піковий туз
-let tuz = koloda.filter(value => value.mast===`spade` && value.value===`ace`)
-console.log(tuz);
-// - всі шістки
-let shest = koloda.filter(value =>  value.value===6)
-console.log(shest);
-// - всі червоні карти
-let chervy = koloda.filter(value => value.color===`red`)
-console.log(chervy);
-// - всі буби
-let bubi = koloda.filter(value => value.mast===`diamond`)
-console.log(bubi);
-// - всі трефи від 9 та більше
-let tref = koloda.filter(value => (value.mast===`clubs` && value.value>=9) || (value.mast=== `clubs` && typeof value.value==='string'))
-console.log(tref);
-// Додатково по reduce
-// Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
+// const colormast = [
+//     {mast: 'spade', color: 'red'},
+//     {mast: 'diamond', color: 'red'},
+//     {mast: 'heart', color: 'black'},
+//     {mast: 'clubs', color: 'black'},
+// ]
+// const znachenie = [6, 7, 8, 9, 10, 'jack','queen','king', 'ace']
+// const koloda =[];
+// for (const colormasts of colormast) {
+//     for (const znachenies of znachenie) {
+//         const card = {
+//             mast: colormasts.mast,
+//             value: znachenies,
+//             color: colormasts.color
+//         }
+//         koloda.push(card)
+//     }
+// }
+// koloda.push({value: `joker`});
+// console.log(koloda);
+// // - знайти піковий туз
+// let tuz = koloda.filter(value => value.mast===`spade` && value.value===`ace`)
+// console.log(tuz);
+// // - всі шістки
+// let shest = koloda.filter(value =>  value.value===6)
+// console.log(shest);
+// // - всі червоні карти
+// let chervy = koloda.filter(value => value.color===`red`)
+// console.log(chervy);
+// // - всі буби
+// let bubi = koloda.filter(value => value.mast===`diamond`)
+// console.log(bubi);
+// // - всі трефи від 9 та більше
+// let tref = koloda.filter(value => (value.mast===`clubs` && value.value>=9) || (value.mast=== `clubs` && typeof value.value==='string'))
+// console.log(tref);
+                                       // Додатково по reduce
+// Взяти описану колоду карт, та за допомоги редюсу попакувати всі
+// карти по "мастях" в об'єкт
 // {
 //     spades:[],
 //         diamonds:[],
