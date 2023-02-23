@@ -34,7 +34,7 @@
 // console.log(str2)
 
 
-// - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
+// split(' ')  разбивает стрингу на массив по указанному знаку. например по пробелу//
 //     let str = 'Ревуть воли як ясла повні';
 // let iron = (`I am a man who walks alone and when I am walking a dark road`)
 // let iron1 = iron.split(` `)
@@ -49,6 +49,7 @@
 //     let nums = [11,21,3];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
+
 // let chisla = [11,21,3];
 // const sortNums = (direction, arr) => {
 //   if (direction==='ascending'){

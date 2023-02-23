@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM</title>
+</head>
+<body>
+
+<h1>dom title</h1>
+<p>
+</p>
+<ul class="users"> </ul>
+<!--<ul class = "menu" id=" list-1">-->
+<!--  <lI>item1 1</lI>-->
+<!--  <lI>item1 2</lI>-->
+
+<!--  </ul>-->
+
+<!--<ul class = "menu" id=" list-2">-->
+<!--  <lI>item2 1</lI>-->
+<!--  <lI>item2 2</lI>-->
+
+<!--</ul>-->
+
+<!--                                           //form//-->
+<!--<form name="f1">-->
+<!--  <input type = 'text' name="username">-->
+<!--  <input type = 'text' name="email">-->
+<!--  <input type = 'number' name="age">-->
+<!--  <input type = 'radio'>-->
+<!--  <input type = 'checkbox'>-->
+<!--  <input type = 'date' name="data">-->
+<!--  <input type = 'password'>-->
+<!--  <button>send</button>-->
+<!--</form>-->
+<!--<form id="f2">-->
+<!--  <input type = 'text' name="username" value="somename">-->
+<!--  <input type = 'text' name="email">-->
+<!--  <input type = 'number' name="age" value="3456">-->
+<!--  <input type = 'radio'>-->
+<!--  <input type = 'checkbox'>-->
+<!--  <input type = 'date' name="data">-->
+<!--  <input type = 'password'>-->
+<!--  <button>send</button>-->
+<!--</form>-->
+
+
+<script>
+  //console.log(document)
+  // console.log(document.head.innerHTML)
+  // console.log(document.body.innerHTML)
+  // console.log(document.body.children)
+
+                            //life colections поиск с возможносью изменения//
+   //id должен быть оригтнальный id находит только первый элемент. html и массив св-в//
+// let ullist1 = document.getElementById(" list-1")
+//   console.log(ullist1)
+//   console.log(ullist1.children)
+
+                                           //class находит все классы. массив со свойствами//
+  // let menues = document.getElementsByClassName('menu')
+  // console.log(menues)
+
+                                          //tag находит все тэги. массив со свойствами//
+  // let uls = document.getElementsByTagName("ul")
+  // console.log(uls)
+
+  // let lishki = document.getElementsByTagName("li")
+  // console.log(lishki)
+  // // for (const lish of lishki) {
+  // //   console.log(lish)
+  // // }
+  // let lush = lishki[6]
+  // console.log(lush)
+  // lush.innerHTML = '<b>joppy</b>'
+  // lush.style.background = 'gold'
+
+
+                               //node list олько ищет и не меняет//
+  //querySelector находит один первый. html формат//
+  // let elem = document.querySelector(".menu")
+  //  console.log(elem)
+
+//querySelectorAll находит все элементы. массив со свойствами//
+
+
+  // let form = document.forms
+  // console.log(form)
+  // console.log(document.forms.f1)
+
+  // let from = document.forms.f2
+  // console.log(from)
+  // console.log(from.children)
+  // console.log(from.username.value)
+
+
+
+
+  let ararat=[
+    {name: 'vas', age: 24, statys: true},
+    {name: 'gas', age: 22, statys: true},
+    {name: 'kvas', age: 34, statys: false},
+    {name: 'vasua', age: 37, statys: true},
+    {name: 'kvasja', age: 18, statys: false},
+    {name: 'vaserman', age: 31, statys: true}
+  ];
+
+
+
+                      //!!!создание динамической структуры!!!!//
+
+//находим юэльку по классу и входим в нее//
+  let uls = document.getElementsByClassName('users');
+  let ul = uls[0];
+
+//итерируем массив, создаем лишки, добавляем в них текст, добавляем лишки в юэльку//
+  for (const user of ararat) {
+    let li = document.createElement('li');
+    li.innerText = `${user.name} ${user.age} ${user.statys}`;
+    ul.appendChild(li);
+  }
+
+
+
+//создали див и поместили его в существующий параграф//
+//   let div = document.createElement('div')
+//   div.innerText = 'vova'
+//   document.body.appendChild(div)
+//   let pi = document.getElementsByTagName('p')
+//   let p = pi[0]
+//   console.log(p)
+//   p.appendChild(div)
+
+
+
+</script>
+
+</body>
+</html>

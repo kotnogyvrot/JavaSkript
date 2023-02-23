@@ -22,5 +22,36 @@
 // } else {
 //   console.log('child')
 // }
-let t=1
-console.log(t)
+// let qwe = {
+//     a:5
+// }
+// let ewq= {...qwe}
+// ewq.a = 10
+// console.log(qwe)
+// console.log(ewq)
+
+
+// const fun = function (a, b) {
+//     let c = a+b
+//     console.log(c)
+//     return c
+// }
+// let rez = fun(12, 5)
+// console.log(rez)
+
+// let oleh = {
+//     age:50
+// }
+//   function star(a) {
+//     a.age +=7
+//     return a
+// }
+// star(oleh);
+// console.log(oleh.age)
+
+let c = {
+    a:3
+    f:4
+}
+let q = ...c
+console.log(c.a)
